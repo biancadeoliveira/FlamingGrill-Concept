@@ -1,0 +1,144 @@
+* {font-family: 'Roboto'}
+
+img {
+    max-width: 100%;
+}
+
+h1 {font-size: 30px}
+
+.d-flex { display: flex }
+.d-inline-block { display: inline-block }
+.g-flex-just-eve{justify-content: space-evenly}
+
+
+.tx-upper { text-transform: uppercase; }
+
+
+/* BUTTONS */
+
+.btn-primary {
+    background: #A2A207;
+    padding: 13px 37px;
+    color: #B8B8B8;
+}
+
+.btn-primary-outline {
+    border: 2px #A2A207 solid;
+    padding: 13px 37px;
+    color: #B8B8B8;
+}
+
+#header-logo{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+#header-socials{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon-sm {
+    width: 20px;
+    height: 20px;
+    margin: 15px;
+}
+
+nav ul a{
+    text-decoration: none;
+    list-style: none;
+    padding: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    align-self: start;
+}
+
+nav ul a:hover {
+    background-color: #292929;
+}
+
+
+#slider {
+    overflow:  hidden;
+    background-image: url("../img/slider-1.png");
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/*Dates Events*/
+.dt-day, .dt-monyh, .dt-year{
+    display: block;
+    font-weight: bold;
+}
+
+.dt-day{
+    font-size: 45px;
+    line-height: 35px;
+}
+.dt-month{
+    font-size: 30px;
+}
+.dt-year{
+    font-size: 25px;
+    line-height: 20px;
+}
+
+#events{
+    overflow: hidden;
+    padding-bottom: 80px;
+}
+
+#events:before{
+    content: '';
+    position: absolute;
+    border-right: 50vw solid #e8e8e8;
+    border-left: 50vw solid transparent;
+    border-bottom: 45px solid #e8e8e8;
+    border-top: 45px solid transparent;
+    bottom: 0px;
+    left: 0;
+}
+
+
+
+
+/*Form*/
+
+form input, form label{
+    display: block;
+    padding: 5px;
+    width: 100%;
+}
+
+.detail-left, .detail-right{
+    position: absolute;
+    width: 80px;
+    height: 120px;
+    top: 0px;
+}
+
+.detail-left{
+    left: 0px;
+    background-color: rgba(255,255,255,0.16);
+}
+
+.detail-right{
+    right: 0px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+
+
+/*Suscribe*/
+#suscribe{
+    padding-left: 0px;
+}
+
+#suscribe-img {
+    background-image: url(../img/suscribe-img.jpg);
+    background-position: center;
+    background-size: cover;
+}

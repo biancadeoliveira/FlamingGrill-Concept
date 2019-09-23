@@ -1,0 +1,162 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+/* Grid Principal */
+
+#wrapper{
+	display: grid!important;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: auto;
+	justify-content: center;
+	/*grid-template-areas:
+		"h	h	h	h	h	h	h	h	h	h	h	h"
+		"s	s	s	s	s	s	s	s	s	s	s	s"
+		"e	e	e	e	e	e	e	e	e	e	e	e"
+		"n	n	n	n	n	n	n	n	n	n	n	n"
+		"s	s	s	s	s	s	s	s	s	s	s	s"
+		"f	f	f	f	f	f	f	f	f	f	f	f"*/
+}
+
+header, #events,#news, #suscribe, footer {padding: 40px 100px;}
+
+header{
+	grid-column: 1 / -1;
+	grid-row: 1;
+	text-align: center;
+}
+
+#slider{
+	grid-column: 1 / -1;
+	grid-row: 2;
+	text-align: center;
+	height: 450px;
+}
+
+#events{
+	grid-column: 1 / -1;
+	grid-row: 3;
+}
+
+#news{
+	grid-column: 1 / span 12;
+	grid-row: 4;
+}
+
+#suscribe{
+	grid-column: 1 / span 12;
+	grid-row: 5;
+}
+
+footer{
+	grid-column: 1 / span 12;
+	grid-row: 6;
+}
+
+/* ------------------------------------------
+/* Grid header */
+
+header{
+	display: grid;
+	grid-template-columns: 20% auto 20%;
+	align-items: center;
+}
+
+#header-logo{ grid-column: 1 / span 1; }
+nav { grid-column: 2 / span 1; }
+#header-socials{ grid-column: 3 / span 1; }
+
+
+/* ------------------------------------------
+/* Grid Events */
+
+#events {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+	position: relative;
+}
+
+#e-message, .e-buttons{
+	grid-column: 1 / -1;
+}
+
+
+/* ------------------------------------------
+/* Grid News */
+
+#news {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 180px 180px;
+	grid-gap: 10px;
+}
+
+.n-big{
+	grid-row: span 2;
+}
+
+/* ------------------------------------------
+/* Grid Suscribe */
+
+#suscribe {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 40px;
+	position: relative;
+}
+
+/* ------------------------------------------
+/* Grid Footer */
+
+footer {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 40px;
+}
+
+
+
+/*Responsivo*/
+
+@media screen and (max-width: 1200px)
+{
+
+	#events {
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: 20px;
+	}
+
+}
+
+
+
+@media screen and (max-width: 800px)
+{
+
+	header{
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	#header-logo{
+		grid-column: 1 / span 1;
+		grid-row: 1;
+	}
+	nav {
+		grid-column: 1 / span 2;
+		grid-row: 3;
+	}
+	#header-socials{
+		grid-column: 2 / span 1;
+		grid-row: 1;
+	}
+
+	#events {
+		grid-template-columns: repeat(1, 1fr);
+		row-gap: 30px;
+	}
+
+}
