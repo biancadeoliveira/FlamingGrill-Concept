@@ -142,3 +142,14 @@ form input, form label{
     background-position: center;
     background-size: cover;
 }
+
+
+@media screen and (max-width: 800px){
+    .d-none-sm{
+        display: none;
+    }
+
+    #suscribe{
+        padding-left: 20px;
+    }
+}
