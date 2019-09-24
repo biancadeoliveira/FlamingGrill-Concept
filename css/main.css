@@ -177,8 +177,4 @@ form input, form label{
         bottom: 0px;
         left: 0;
     }
-
-    .e-dates div:nth-child(2){
-        text-align: center;
-    }
 }
