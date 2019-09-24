@@ -10,48 +10,32 @@
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: auto;
 	justify-content: center;
-	/*grid-template-areas:
-		"h	h	h	h	h	h	h	h	h	h	h	h"
-		"s	s	s	s	s	s	s	s	s	s	s	s"
-		"e	e	e	e	e	e	e	e	e	e	e	e"
-		"n	n	n	n	n	n	n	n	n	n	n	n"
-		"s	s	s	s	s	s	s	s	s	s	s	s"
-		"f	f	f	f	f	f	f	f	f	f	f	f"*/
 }
+
+/*Larguras*/
+.sp-1 {grid-column: span 1;}
+.sp-2 {grid-column: span 2;}
+.sp-3 {grid-column: span 3;}
+.sp-4 {grid-column: span 4;}
+.sp-5 {grid-column: span 5;}
+.sp-6 {grid-column: span 6;}
+.sp-7 {grid-column: span 7;}
+.sp-8 {grid-column: span 8;}
+.sp-9 {grid-column: span 9;}
+.sp-10{grid-column: span 10;}
+.sp-11{grid-column: span 11;}
+.sp-12{grid-column: span 12;}
+.sp-full{grid-column: 1 / -1;}
 
 header, #events,#news, #suscribe, footer {padding: 40px 100px;}
 
 header{
-	grid-column: 1 / -1;
-	grid-row: 1;
 	text-align: center;
+	padding: 10px 50px;
 }
 
 #slider{
-	grid-column: 1 / -1;
-	grid-row: 2;
-	text-align: center;
 	height: 450px;
-}
-
-#events{
-	grid-column: 1 / -1;
-	grid-row: 3;
-}
-
-#news{
-	grid-column: 1 / span 12;
-	grid-row: 4;
-}
-
-#suscribe{
-	grid-column: 1 / span 12;
-	grid-row: 5;
-}
-
-footer{
-	grid-column: 1 / span 12;
-	grid-row: 6;
 }
 
 /* ------------------------------------------
@@ -63,11 +47,6 @@ header{
 	align-items: center;
 }
 
-#header-logo{ grid-column: 1 / span 1; }
-nav { grid-column: 2 / span 1; }
-#header-socials{ grid-column: 3 / span 1; }
-
-
 /* ------------------------------------------
 /* Grid Events */
 
@@ -77,11 +56,6 @@ nav { grid-column: 2 / span 1; }
 	grid-template-rows: auto;
 	position: relative;
 }
-
-#e-message, .e-buttons{
-	grid-column: 1 / -1;
-}
-
 
 /* ------------------------------------------
 /* Grid News */
@@ -143,7 +117,7 @@ footer {
 	}
 
 	#header-logo{
-		grid-column: 1 / span 1;
+		grid-column: 1 / span 2;
 		grid-row: 1;
 	}
 	nav {
@@ -152,7 +126,7 @@ footer {
 	}
 	#header-socials{
 		grid-column: 2 / span 1;
-		grid-row: 1;
+		grid-row: 2;
 	}
 
 	#events {
@@ -163,6 +137,10 @@ footer {
 
 	#news {
 		grid-template-columns: repeat(1, 1fr);
+	}
+
+	#news .image{
+		min-height: 180px;
 	}
 
 	#suscribe {
