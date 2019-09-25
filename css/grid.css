@@ -12,6 +12,11 @@
 	justify-content: center;
 }
 
+.d-grid-12 {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+
 /*Larguras*/
 .sp-1 {grid-column: span 1;}
 .sp-2 {grid-column: span 2;}
@@ -27,7 +32,7 @@
 .sp-12{grid-column: span 12;}
 .sp-full{grid-column: 1 / -1;}
 
-header, #events,#news, #suscribe, footer {padding: 40px 100px;}
+section, header, footer {padding: 40px 100px;}
 
 header{
 	text-align: center;
@@ -94,6 +99,11 @@ footer {
 
 
 
+#about-locales{
+	grid-gap: 20px;
+}
+
+
 /*Responsivo*/
 
 @media screen and (max-width: 1200px)
@@ -110,7 +120,7 @@ footer {
 
 @media screen and (max-width: 800px)
 {
-	header, #events,#news, #suscribe, footer {padding: 40px 20px;}
+	section, header, footer {padding: 40px 20px;}
 
 	header{
 		grid-template-columns: repeat(1, 1fr);

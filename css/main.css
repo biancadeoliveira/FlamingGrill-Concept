@@ -4,6 +4,8 @@ img {
     max-width: 100%;
 }
 
+a{text-decoration: none;}
+
 h1 {font-size: 30px}
 
 .d-flex { display: flex }
@@ -177,4 +179,15 @@ form input, form label{
         bottom: 0px;
         left: 0;
     }
+}
+
+
+/*Páginas internas*/
+
+/*ABOUT*/
+
+#s-title{ position: relative };
+
+.about-img img{
+    max-width: 100%;
 }
